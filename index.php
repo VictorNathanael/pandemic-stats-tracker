@@ -4,38 +4,37 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>covid-data-visualizer</title>
-        <link rel="stylesheet" href="/css/style.css" />
-        <link rel="icon" type="image/png" href="../../assets/img/icon_kidopi.png"/>
+        <title>Covid Data Visualizer</title>
+        <link rel="stylesheet" href="./app/covidDataVisualizer/style.css" />
+        <link rel="icon" type="image/png" href="./app/assets/img/icon_kidopi.png"/>
     </head>
     <body>
         <header>
-            <img src="./assets/img/logo_kidopi.png" alt="logo kidopi">
+            <img src="./app/assets/img/logo_kidopi.png" alt="logo kidopi">
             <h1>Consulta de casos de covid</h1>
-            <a href="./php/compare/index.php">
-                <button>Comparar taxas de mortalidade</button>
+            <a href="./app/covidDataCompare/covidDataCompare.php">
+                <button id="btnMortalityRate">Comparar taxas de mortalidade</button>
             </a>
         </header>
         <main>
             <form method="post">
-                    <select name="pais" id="pais" onchange="this.form.submit()">
-                        <option value="" selected disabled>Selecione um país</option>
-                        <option value="Brazil" <?php if(isset($_POST['pais']) && $_POST['pais'] == 'Brazil') { echo ' selected'; } ?>>Brasil</option>
-                        <option value="Canada" <?php if(isset($_POST['pais']) && $_POST['pais'] == 'Canada') { echo ' selected'; } ?>>Canadá</option>
-                        <option value="Australia" <?php if(isset($_POST['pais']) && $_POST['pais'] == 'Australia') { echo ' selected'; } ?>>Austrália</option>
-                    </select>
+                <select name="selectCountry" id="selectCountry" onchange="this.form.submit()">
+                    <option value="Brazil" <?php if(isset($_POST['selectCountry']) && $_POST['selectCountry'] == 'Brazil') { echo ' selected'; } ?>>Brasil</option>
+                    <option value="Canada" <?php if(isset($_POST['selectCountry']) && $_POST['selectCountry'] == 'Canada') { echo ' selected'; } ?>>Canadá</option>
+                    <option value="Australia" <?php if(isset($_POST['selectCountry']) && $_POST['selectCountry'] == 'Australia') { echo ' selected'; } ?>>Austrália</option>
+                </select>
             </form>
-            <div id="casosTotais">
-                <?php include './php/visualizer/consulta.php'; ?>
+            <div id="totalCases">
+                <?php include './app/covidDataVisualizer/totalCases.php'; ?>
             </div>
         </main>
         <footer>
-            <div id="ultimaConsulta">
+            <div id="lastQuery">
                 <p>
-                    <?php include './php/visualizer/ultimaConsulta.php'?>
+                    <?php include './app/covidDataVisualizer/lastQuery.php'?>
                 </p>
             </div>
         </footer>
-        <script src="./javascript/index.js"></script>
+        <script src="./app/covidDataVisualizer/covidDataVisualizer.js"></script>
     </body>
 </html>
