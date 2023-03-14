@@ -1,0 +1,150 @@
+html {
+    margin: 0;
+    background-color: #f2f2f2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+        sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    box-shadow: 1px 0px 0px #888888, 0px 0px 5px #888888;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+header img {
+    position: fixed;
+    left: 40px;
+    height: 40px;
+}
+
+header h1 {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+header #covidData {
+    position: fixed;
+    top: 25px;
+    right: 40px;
+    border: 1px solid #5c5c5cb6;
+    background-color: #ffffff;
+    padding: 7px 10px;
+    border-radius: 7px;
+    font-weight: 700;
+    transition-duration: 0.4s;
+}
+
+header #covidData:hover {
+    background-color: #20e070;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 100px;
+}
+
+form {
+    display: flex;
+    margin: 50px;
+    margin-top: 60px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    box-shadow: 2px 2px 4px #888888, -2px -2px 4px #888888;
+    background-color: #f2f2f2;
+}
+
+#country1,
+#country2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+        sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    outline: none;
+    margin-left: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: none;
+}
+
+#mortalityRate {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#mortalityRate #textMortality {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+    margin: 0px;
+    background-color: #20e070;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 8px 10px;
+    width: 200px;
+    height: 170px;
+    border: none;
+}
+
+#mortalityRate #textMortality:nth-child(2) {
+    flex-direction: column-reverse;
+    height: 120px;
+    width: 160px;
+    border-radius: 0;
+    padding: 10px 0;
+    background-color: #ffff;
+    box-shadow: inset 5px 0 6px -4px rgb(0, 0, 0),
+        inset -5px 0 6px -4px rgb(0, 0, 0);
+}
+
+#mortalityRate #percentage {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 70px;
+}
+
+#mortalityRate #textMortality:nth-child(2) #percentage {
+    font-size: 50px;
+}
+
+#mortalityRate #death,
+#mortalityRate #difference {
+    color: black;
+    font-weight: 500;
+}
+
+#mortalityRate #death {
+    margin-top: -15px;
+    text-align: end;
+}
+
+#mortalityRate #country {
+    margin-top: 15px;
+    color: #ffff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+}
