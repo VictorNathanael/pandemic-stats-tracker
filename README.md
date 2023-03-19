@@ -1,6 +1,6 @@
 # Pandemic Stats Tracker
 
-Essa interface web criada utilizando HTML, CSS, JS e PHP.
+Essa interface web foi criada utilizando HTML, CSS, JS e PHP.
 
 O banco de dados (MySQL) armazena a data e hora de todos os acessos que o script fez à API-Covid-19, bem como qual o país escolhido para a consulta.
 
