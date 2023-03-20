@@ -15,7 +15,7 @@ Clicando no botão no canto superior direito, ele levará a outra interface cham
 ### Clone esse repositório
 
 ``` 
-git clone https://github.com/VictorNathanael/pandemic-stats-tracker
+git clone https://github.com/VictorNathanael/pandemic-stats-tracker.git
 ```
 
 ### Você precisará do XAMPP. Aprenda a instalar através desse [link](https://youtu.be/COepL5-bNNI).
