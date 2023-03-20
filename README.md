@@ -12,17 +12,14 @@ Clicando no botão no canto superior direito, ele levará a outra interface cham
 
 ## 📋 Pré-requisitos
 
-### Clone esse repositório
+- Faça o download desse repositório na sua máquina.
 
-``` 
-git clone https://github.com/VictorNathanael/pandemic-stats-tracker.git
-```
+- Instale o XAMPP seguindo esse [tutorial](https://youtu.be/COepL5-bNNI).
 
-### Você precisará do XAMPP. Aprenda a instalar através desse [link](https://youtu.be/COepL5-bNNI).
+- Coloque as pastas do projeto dentro da pasta "htdocs" do XAMPP.
 
 ## ⚙️ Configurando o projeto
 
-- Coloque o projeto dentro da pasta "htdocs" do XAMPP.
 - Abra o XAMPP e no module Apache clique em "Start".
 - No module MySQL clique em "Start" e depois em "Admin". 
 - Com o navegador aberto no phpMyAdmin, crie um banco de dados com o nome de: **acesso_api_covid**
