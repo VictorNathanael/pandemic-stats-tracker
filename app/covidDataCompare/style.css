@@ -60,17 +60,6 @@ form {
     margin-top: 60px;
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    height: 50px;
-    width: 100%;
-    box-shadow: 2px 2px 4px #888888, -2px -2px 4px #888888;
-    background-color: #f2f2f2;
-}
-
 #country1,
 #country2 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
