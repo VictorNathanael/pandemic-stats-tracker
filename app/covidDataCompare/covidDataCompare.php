@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Covid Data Compare</title>
+        <title>Pandemic Stats Comparison</title>
         <link rel="icon" type="image/png" href="../assets/img/icon_kidopi.png"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,8 +25,6 @@
                 <?php include './rateMortality.php' ?>
             </div>
         </main>
-        <footer>
-        </footer>
         <script src="./covidDataCompare.js"></script>
     </body>
 </html>
