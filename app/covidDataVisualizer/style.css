@@ -133,8 +133,8 @@ form {
 
 footer {
     display: flex;
-    align-items: center;
     position: fixed;
+    align-items: center;
     bottom: 0;
     height: 50px;
     width: 100%;
