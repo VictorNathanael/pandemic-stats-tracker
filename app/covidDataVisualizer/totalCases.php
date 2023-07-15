@@ -24,8 +24,8 @@
         <div id="containerCountry">
             <div id="country">
                 <h3><?php echo $country; ?></h3>
-                <p>Total de casos confirmados: <?php echo $totalConfirmed ; ?></p>
-                <p>Total de mortes: <?php echo  $totalDeaths; ?></p>
+                <p>Total de casos confirmados: <?php echo number_format($totalConfirmed,0,'.','.'); ?></p>
+                <p>Total de mortes: <?php echo  number_format($totalDeaths,0,'.','.'); ?></p>
             </div> 
         </div>
         <div id="containerStates">
@@ -33,8 +33,8 @@
             foreach ($covidData as $state): ?>
                 <div id="state">
                     <h3><?php echo $state['ProvinciaEstado']; ?></h3>
-                    <p>Confirmados: <?php echo $state[$confirmed]; ?></p>
-                    <p>Mortos: <?php echo $state[$deaths]; ?></p>
+                    <p>Confirmados: <?php echo number_format($state[$confirmed],0,'.','.'); ?></p>
+                    <p>Mortos: <?php echo number_format($state[$deaths],0,'.','.'); ?></p>
                 </div>
             <?php endforeach; ?>
         </div>
