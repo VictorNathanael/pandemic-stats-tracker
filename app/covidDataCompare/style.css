@@ -6,43 +6,50 @@ html {
         sans-serif;
 }
 
+body {
+    width: 100%;
+}
+
 header {
     display: flex;
+    flex-wrap: wrap;
     position: fixed;
-    align-items: center;
-    justify-content: center;
-    top: 0;
     width: 100%;
+    min-width: 370px;
+    height: 80px;
+    top: 0;
+    justify-content: center;
+    align-items: center;
     box-shadow: 1px 0px 0px #888888, 0px 0px 5px #888888;
     background-color: #f2f2f2;
-    margin: 0;
 }
 
 header img {
-    position: fixed;
-    left: 40px;
     height: 40px;
+    margin-left: 60px;
+    transition-duration: 0.4s;
 }
 
 header h1 {
+    margin: 0;
+    flex: 1;
     font-size: 30px;
     text-align: center;
-    width: 100%;
+    transition-duration: 0.4s;
 }
 
-header #covidData {
-    position: fixed;
-    top: 25px;
-    right: 40px;
+header #btnCovidData {
+    width: 200px;
+    padding: 10px 0;
+    margin: 10px 20px 10px 10px;
     border: 1px solid #5c5c5cb6;
     background-color: #ffffff;
-    padding: 7px 10px;
     border-radius: 7px;
     font-weight: 700;
     transition-duration: 0.4s;
 }
 
-header #covidData:hover {
+header #btnCovidData:hover {
     background-color: #20e070;
     color: white;
 }
@@ -97,6 +104,7 @@ form {
     width: 200px;
     height: 170px;
     border: none;
+    transition-duration: 0.4s;
 }
 
 #mortalityRate #textMortality:nth-child(2) {
@@ -108,26 +116,31 @@ form {
     background-color: #ffff;
     box-shadow: inset 5px 0 6px -4px rgb(0, 0, 0),
         inset -5px 0 6px -4px rgb(0, 0, 0);
+    transition-duration: 0.4s;
 }
 
-#mortalityRate #percentage {
+#mortalityRate #textPercentage {
     font-family: 'Quicksand', sans-serif;
+    transition-duration: 0.4s;
     font-size: 70px;
 }
 
-#mortalityRate #textMortality:nth-child(2) #percentage {
+#mortalityRate #textMortality:nth-child(2) #textPercentage {
+    transition-duration: 0.4s;
     font-size: 50px;
 }
 
-#mortalityRate #death,
+#mortalityRate #textDeath,
 #mortalityRate #difference {
     color: black;
     font-weight: 500;
+    transition-duration: 0.4s;
 }
 
-#mortalityRate #death {
+#mortalityRate #textDeath {
     margin-top: -15px;
     text-align: end;
+    transition-duration: 0.4s;
 }
 
 #mortalityRate #country {
@@ -136,4 +149,59 @@ form {
     font-family: 'Quicksand', sans-serif;
     font-size: 24px;
     font-weight: 800;
+    transition-duration: 0.4s;
+}
+
+@media (max-width: 930px) {
+    header h1 {
+        transition-duration: 0.4s;
+        font-size: 18px;
+    }
+    header img {
+        transition-duration: 0.4s;
+        height: 30px;
+        margin-left: 10px;
+    }
+
+    header #btnCovidData {
+        transition-duration: 0.4s;
+        width: 120px;
+        font-size: 10px;
+    }
+
+    #mortalityRate #textPercentage {
+        transition-duration: 0.4s;
+        font-size: 50px;
+    }
+
+    #mortalityRate #textMortality:nth-child(2) #textPercentage {
+        transition-duration: 0.4s;
+        font-size: 30px;
+    }
+    #mortalityRate #country {
+        transition-duration: 0.4s;
+        font-size: 20px;
+    }
+
+    #textMortality #textDeath {
+        transition-duration: 0.4s;
+        font-size: 14px;
+    }
+
+    #mortalityRate #textMortality {
+        transition-duration: 0.4s;
+        width: 170px;
+        height: 140px;
+    }
+
+    #mortalityRate #textMortality:nth-child(2) {
+        transition-duration: 0.4s;
+        height: 90px;
+        width: 130px;
+    }
+
+    #difference {
+        transition-duration: 0.4s;
+        font-size: 14px;
+    }
 }
