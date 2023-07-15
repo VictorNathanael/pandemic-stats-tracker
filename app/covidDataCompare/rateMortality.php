@@ -45,9 +45,9 @@ if (isset($_POST['country1']) && isset($_POST['country2'])) {
         $difference = $rate1 - $rate2;
         $difference = abs($difference);
 
-        echo "<div id=" . "textMortality" . ">". "<div id=" . "percentage" . ">" . round($rate1, 2) . "% </div> <div id=" . "death" . "> mortos </div><div id=" . "country" . ">" . $country1 . "</div>" . "</div>";
-        echo "<div id=" . "textMortality" . ">" . "<div id=" . "percentage" . ">" . round($difference, 2) ."% </div>" . "<div id=" . "difference" . ">" . "diferença de" . "</div>" . "</div>";
-        echo "<div id=" . "textMortality" . ">". "<div id=" . "percentage" . ">" . round($rate2, 2) . "% </div> <div id=" . "death" . "> mortos </div><div id=" . "country" . ">" . $country2 . "</div>" . "</div>";
+        echo "<div id=" . "textMortality" . ">". "<div id=" . "textPercentage" . ">" . round($rate1, 2) . "% </div> <div id=" . "textDeath" . "> mortos </div><div id=" . "country" . ">" . $country1 . "</div>" . "</div>";
+        echo "<div id=" . "textMortality" . ">" . "<div id=" . "textPercentage" . ">" . round($difference, 2) ."% </div>" . "<div id=" . "difference" . ">" . "diferença de" . "</div>" . "</div>";
+        echo "<div id=" . "textMortality" . ">". "<div id=" . "textPercentage" . ">" . round($rate2, 2) . "% </div> <div id=" . "textDeath" . "> mortos </div><div id=" . "country" . ">" . $country2 . "</div>" . "</div>";
     }
     
     calculateMortalityRateDifference($country1, $deathsCountry1, $confirmedCountry1, $country2, $deathsCountry2, $confirmedCountry2);
