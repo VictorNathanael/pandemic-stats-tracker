@@ -16,7 +16,7 @@
             <img src="../assets/img/logo_kidopi.png" alt="logo kidopi">
             <h1>Comparar taxas de mortalidade</h1>
             <a href="../../index.php">
-                <button id="covidData">Consultar dados de covid</button>
+                <button id="btnCovidData">Consultar dados de covid</button>
             </a>
         </header>
         <main>
