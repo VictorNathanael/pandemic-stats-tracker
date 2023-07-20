@@ -28,7 +28,6 @@ header img {
     height: 40px;
     margin-left: 60px;
     margin-right: 20px;
-    transition-duration: 0.4s;
 }
 
 header h1 {
@@ -36,7 +35,6 @@ header h1 {
     flex: 1;
     font-size: 30px;
     text-align: center;
-    transition-duration: 0.4s;
 }
 
 header #btnMortalityRate {
@@ -47,7 +45,6 @@ header #btnMortalityRate {
     background-color: #ffffff;
     border-radius: 7px;
     font-weight: 700;
-    transition-duration: 0.4s;
 }
 
 header #btnMortalityRate:hover {
@@ -96,7 +93,6 @@ form {
     width: 350px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
         rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    transition-duration: 0.4s;
 }
 
 #totalCases #containerCountry #country h3 {
@@ -120,12 +116,12 @@ form {
 
 #totalCases #containerStates #state {
     width: 180px;
-    margin-top: 20px;
     border-radius: 10px;
     padding: 15px 20px;
     background-color: #ffff;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
         rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin: 20px 5px 0 5px;
 }
 
 #totalCases #containerStates #state h3 {
@@ -158,35 +154,25 @@ footer p {
 #lastQuery {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     font-weight: 500;
-    transition-duration: 0.4s;
 }
 
 @media (max-width: 930px) {
     header h1 {
-        transition-duration: 0.4s;
-        font-size: 18px;
+        font-size: 20px;
     }
     header img {
-        transition-duration: 0.4s;
         height: 30px;
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     header #btnMortalityRate {
-        transition-duration: 0.4s;
         width: 120px;
-        font-size: 10px;
-    }
-
-    #lastQuery {
-        transition-duration: 0.4s;
-        font-size: 10px;
+        font-size: 12px;
     }
 
     #totalCases #containerCountry #country {
-        transition-duration: 0.4s;
         width: 320px;
     }
 }

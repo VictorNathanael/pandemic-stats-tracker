@@ -27,7 +27,6 @@ header {
 header img {
     height: 40px;
     margin-left: 60px;
-    transition-duration: 0.4s;
 }
 
 header h1 {
@@ -35,7 +34,6 @@ header h1 {
     flex: 1;
     font-size: 30px;
     text-align: center;
-    transition-duration: 0.4s;
 }
 
 header #btnCovidData {
@@ -46,7 +44,6 @@ header #btnCovidData {
     background-color: #ffffff;
     border-radius: 7px;
     font-weight: 700;
-    transition-duration: 0.4s;
 }
 
 header #btnCovidData:hover {
@@ -104,7 +101,6 @@ form {
     width: 200px;
     height: 170px;
     border: none;
-    transition-duration: 0.4s;
 }
 
 #mortalityRate #textMortality:nth-child(2) {
@@ -116,17 +112,15 @@ form {
     background-color: #ffff;
     box-shadow: inset 5px 0 6px -4px rgb(0, 0, 0),
         inset -5px 0 6px -4px rgb(0, 0, 0);
-    transition-duration: 0.4s;
 }
 
 #mortalityRate #textPercentage {
     font-family: 'Quicksand', sans-serif;
-    transition-duration: 0.4s;
+
     font-size: 70px;
 }
 
 #mortalityRate #textMortality:nth-child(2) #textPercentage {
-    transition-duration: 0.4s;
     font-size: 50px;
 }
 
@@ -134,13 +128,11 @@ form {
 #mortalityRate #difference {
     color: black;
     font-weight: 500;
-    transition-duration: 0.4s;
 }
 
 #mortalityRate #textDeath {
     margin-top: -15px;
     text-align: end;
-    transition-duration: 0.4s;
 }
 
 #mortalityRate #country {
@@ -149,59 +141,48 @@ form {
     font-family: 'Quicksand', sans-serif;
     font-size: 24px;
     font-weight: 800;
-    transition-duration: 0.4s;
 }
 
 @media (max-width: 930px) {
     header h1 {
-        transition-duration: 0.4s;
-        font-size: 18px;
+        font-size: 20px;
     }
     header img {
-        transition-duration: 0.4s;
         height: 30px;
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     header #btnCovidData {
-        transition-duration: 0.4s;
         width: 120px;
-        font-size: 10px;
+        font-size: 12px;
     }
 
     #mortalityRate #textPercentage {
-        transition-duration: 0.4s;
         font-size: 50px;
     }
 
     #mortalityRate #textMortality:nth-child(2) #textPercentage {
-        transition-duration: 0.4s;
         font-size: 30px;
     }
     #mortalityRate #country {
-        transition-duration: 0.4s;
         font-size: 20px;
     }
 
     #textMortality #textDeath {
-        transition-duration: 0.4s;
         font-size: 14px;
     }
 
     #mortalityRate #textMortality {
-        transition-duration: 0.4s;
         width: 170px;
         height: 140px;
     }
 
     #mortalityRate #textMortality:nth-child(2) {
-        transition-duration: 0.4s;
         height: 90px;
         width: 130px;
     }
 
     #difference {
-        transition-duration: 0.4s;
         font-size: 14px;
     }
 }
