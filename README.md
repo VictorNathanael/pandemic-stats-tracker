@@ -34,13 +34,9 @@ Clicando no botão no canto superior direito, ele levará a outra interface cham
     );
     ```
 
-- Se você criou seu banco com um nome diferente de *acesso_api_covid* edite o arquivo "lastAccessApi.php" e mude a linha abaixo:
-
-    ```PHP
-    $conexao = mysqli_connect('localhost', 'root', '', 'acesso_api_covid');
-    ```
+- Se você criou seu banco com um nome diferente de *acesso_api_covid* edite o arquivo `config/database.php` e edite as informações.
     
-**OBS: O user padrão é o root e a senha padrão é uma string vazia**
+**OBS: O user padrão é root e a senha padrão é uma string vazia**
 
 ## 🎯 Rodando o projeto
 
