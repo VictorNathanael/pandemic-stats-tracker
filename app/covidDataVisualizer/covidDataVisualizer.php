@@ -30,7 +30,7 @@
         </main>
         <footer>
             <div id="lastQuery">
-                    <?php include './app/covidDataVisualizer/lastAcessApi.php'?>
+                    <?php include './app/covidDataVisualizer/lastAccessApi.php'?>
             </div>
         </footer>
         <script src="./app/covidDataVisualizer/covidDataVisualizer.js"></script>
